@@ -2,8 +2,8 @@
 
 namespace GeneaLabs\LaravelSignInWithApple\Tests;
 
-use GeneaLabs\LaravelSignInWithApple\Providers\ServiceProvider;
-use GeneaLabs\LaravelSignInWithApple\Tests\Fixtures\Providers\TestingServiceProvider;
+use ImpressoLabs\LaravelSignInWithHuawei\Providers\ServiceProvider;
+use ImpressoLabs\LaravelSignInWithHuawei\Tests\Fixtures\Providers\TestingServiceProvider;
 use Illuminate\Contracts\Http\Kernel;
 use Illuminate\Session\Middleware\StartSession;
 use Laravel\Socialite\SocialiteServiceProvider;

@@ -1,10 +1,11 @@
 <?php
 
-namespace GeneaLabs\LaravelSignInWithApple\Providers;
+namespace ImpressoLabs\LaravelSignInWithHuawei\Providers;
 
 use Illuminate\Support\Facades\Blade;
-use Illuminate\Support\ServiceProvider as LaravelServiceProvider;
 use Laravel\Socialite\Contracts\Factory;
+use Illuminate\Support\ServiceProvider as LaravelServiceProvider;
+use ImpressoLabs\LaravelSignInWithHuawei\Providers\HuaweiProvider;
 
 class ServiceProvider extends LaravelServiceProvider
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace GeneaLabs\LaravelSignInWithApple\Tests\Fixtures\Http\Controllers;
+namespace ImpressoLabs\LaravelSignInWithHuawei\Tests\Fixtures\Http\Controllers;
 
 use Laravel\Socialite\Facades\Socialite;
 
@@ -8,14 +8,14 @@ class SiwaController
 {
     public function login()
     {
-        return Socialite::driver("sign-in-with-apple")
+        return Socialite::driver("huawei")
             ->scopes(["name", "email"])
             ->redirect();
     }
 
     public function callback()
     {
-        $user = Socialite::driver("sign-in-with-apple")
+        $user = Socialite::driver("huawei")
             ->user();
     }
 }

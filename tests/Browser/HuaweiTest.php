@@ -1,8 +1,8 @@
 <?php
 
-namespace GeneaLabs\LaravelSignInWithApple\Tests\Browser;
+namespace ImpressoLabs\LaravelSignInWithHuawei\Tests\Browser;
 
-use GeneaLabs\LaravelSignInWithApple\Tests\BrowserTestCase;
+use ImpressoLabs\LaravelSignInWithHuawei\Tests\BrowserTestCase;
 use Laravel\Dusk\Browser;
 
 class SignInWithHuaweiTest extends BrowserTestCase
@@ -16,7 +16,7 @@ class SignInWithHuaweiTest extends BrowserTestCase
         });
     }
 
-    public function testRedirectShowsAppleIdLogin()
+    public function testRedirectShowsHuaweiIdLogin()
     {
         $this->browse(function (Browser $browser) {
             $browser

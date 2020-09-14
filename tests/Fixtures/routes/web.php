@@ -1,6 +1,6 @@
 <?php
 
-use GeneaLabs\LaravelSignInWithApple\Tests\Fixtures\Http\Controllers\SiwaController;
+use ImpressoLabs\LaravelSignInWithHuawei\Tests\Fixtures\Http\Controllers\SiwaController;
 
 Route::view("/tests", "tests");
 Route::get("/siwa-login", SiwaController::class . "@login");

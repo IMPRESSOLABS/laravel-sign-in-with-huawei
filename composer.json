@@ -1,20 +1,17 @@
 {
-    "name": "genealabs/laravel-sign-in-with-apple",
-    "description": "Add Apple's new single-signon feature to your site with ease.",
+    "name": "impressolabs/laravel-sign-in-with-huawei",
+    "description": "Add Huawei's new single-signon feature to your site with ease.",
     "type": "library",
     "license": "MIT",
     "authors": [
         {
-            "name": "Mike Bronner",
-            "email": "hello@genealabs.com",
-            "homepage": "https://genealabs.com",
+            "name": "Stark Liew",
+            "email": "hello@impressolabs.io",
+            "homepage": "https://www.impressoapp.com/",
             "role": "Developer"
         }
     ],
     "readme": "README.md",
-    "suggest": {
-        "genealabs/laravel-socialiter": "Automatic user resolution and persistence for any Laravel Socialite driver."
-    },
     "require": {
         "illuminate/support": "^7.0",
         "laravel/socialite": "^4.3"
@@ -26,22 +23,22 @@
         "phpmd/phpmd": "^2.7",
         "squizlabs/php_codesniffer": "^3.5",
         "predis/predis": "^1.1",
-        "phpunit/phpunit": "^8.5"
+        "phpunit/phpunit": "9.3"
     },
     "autoload": {
         "psr-4": {
-            "GeneaLabs\\LaravelSignInWithApple\\": "src/"
+            "ImpressoLabs\\LaravelSignInWithHuawei\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "GeneaLabs\\LaravelSignInWithApple\\Tests\\": "tests/"
+            "ImpressoLabs\\LaravelSignInWithHuawei\\Tests\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "\\GeneaLabs\\LaravelSignInWithApple\\Providers\\ServiceProvider"
+                "\\ImpressoLabs\\LaravelSignInWithHuawei\\Providers\\ServiceProvider"
             ]
         }
     },

@@ -1,6 +1,6 @@
 <?php
 
-namespace GeneaLabs\LaravelSignInWithApple\Tests;
+namespace ImpressoLabs\LaravelSignInWithHuawei\Tests;
 
 use Orchestra\Testbench\TestCase;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace GeneaLabs\LaravelSignInWithApple\Tests\Fixtures\Providers;
+namespace ImpressoLabs\LaravelSignInWithHuawei\Tests\Fixtures\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace GeneaLabs\LaravelSignInWithApple\Providers;
+namespace ImpressoLabs\LaravelSignInWithHuawei\Providers;
 
 use Illuminate\Support\Arr;
 use Laravel\Socialite\Two\AbstractProvider;
@@ -15,8 +15,9 @@ class HuaweiProvider extends AbstractProvider implements ProviderInterface
 
     protected function getAuthUrl($state)
     {
+        //https://oauth-login.cloud.huawei.com/.well-known/openid-configuration
         return $this->buildAuthUrlFromBase(
-            'https://appleid.apple.com/auth/authorize',
+            'https://oauth-login.cloud.huawei.com/oauth2/v3/authorize',
             $state
         );
     }
@@ -40,7 +41,7 @@ class HuaweiProvider extends AbstractProvider implements ProviderInterface
 
     protected function getTokenUrl()
     {
-        return "https://appleid.apple.com/auth/token";
+        return "https://oauth-login.cloud.huawei.com/oauth2/v3/token";
     }
 
     public function getAccessToken($code)
@@ -105,9 +106,9 @@ class HuaweiProvider extends AbstractProvider implements ProviderInterface
             if (array_key_exists("name", $userRequest)) {
                 $user["name"] = $userRequest["name"];
                 $fullName = trim(
-                    ($user["name"]['firstName'] ?? "")
+                    ($user["name"]['family_name'] ?? "")
                     . " "
-                    . ($user["name"]['lastName'] ?? "")
+                    . ($user["name"]['given_name'] ?? "")
                 );
             }
         }
