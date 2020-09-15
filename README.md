@@ -3,7 +3,7 @@
 
 
 ## Supporting This Package
-*Code base fork from [https://github.com/GeneaLabs/laravel-sign-in-with-apple](GeneaLabs/laravel-sign-in-with-apple)*
+*Code base fork from [https://github.com/GeneaLabs/laravel-sign-in-with-apple]*
 
 This is an MIT-licensed open source project with its ongoing development made possible by the support of the community. If you'd like to support this, and our other packages, please consider sponsoring us via the button above.
 
