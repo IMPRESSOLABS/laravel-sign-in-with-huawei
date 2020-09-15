@@ -54,7 +54,6 @@ class HuaweiSigninController extends Controller
     public function login()
     {
         return Socialite::driver("huawei")
-            ->scopes(["profile", "email"])
             ->redirect();
     }
 
