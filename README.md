@@ -67,8 +67,6 @@ class HuaweiSigninController extends Controller
 }
 ```
 
-Note that when processing the returned `$user` object, it is critical to know that the `sub` element is the unique identifier for the user, **NOT** the email address. For more details, visit https://developer.huawei.com/consumer/en/doc/development/HMS-References/account-obtain-token.
-
 ----------
 
 #### Credits
