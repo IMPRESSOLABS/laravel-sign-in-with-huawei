@@ -79,18 +79,5 @@ Note that when processing the returned `$user` object, it is critical to know th
 
 ----------
 
-## Commitment to Quality
 
-## Contributing
-Please observe and respect all aspects of the included [Code of Conduct](https://github.com/IMPRESSOLABS/laravel-sign-in-with-huawei/blob/master/CODE_OF_CONDUCT.md).
 
-### Reporting Issues
-When reporting issues, please fill out the included template as completely as
-possible. Incomplete issues may be ignored or closed if there is not enough
-information included to be actionable.
-
-### Submitting Pull Requests
-Please review the [Contribution Guidelines](https://github.com/IMPRESSOLABS/laravel-sign-in-with-huawei/blob/master/CONTRIBUTING.md). Only PRs that meet all criterium will be accepted.
-
-## If you ❤️ open-source software, give the repos you use a ⭐️.
-We have included the awesome `symfony/thanks` composer package as a dev dependency. Let your OS package maintainers know you appreciate them by starring the packages you use. Simply run `composer thanks` after installing this package. (And not to worry, since it's a dev-dependency it won't be installed in your live environment.)
