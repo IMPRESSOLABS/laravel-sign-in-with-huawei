@@ -1,7 +1,6 @@
 
 # Sign In With Huawei for Laravel
 
-![repository-open-graph-template](https://user-images.githubusercontent.com/1791050/66706715-21cc0800-eceb-11e9-90b4-0a6ae3dd97b7.png)
 
 ## Supporting This Package
 *Code base fork from GeneaLabs/laravel-sign-in-with-apple*
