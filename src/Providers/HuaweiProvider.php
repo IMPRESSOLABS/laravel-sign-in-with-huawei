@@ -32,9 +32,14 @@ class HuaweiProvider extends AbstractProvider implements ProviderInterface
             'response_mode' => 'form_post',
         ];
 
+
+
         if ($this->usesState()) {
             $fields['state'] = $state;
         }
+
+        $fields["grant_type"] = "authorization_code";
+        $fields["scope"] = "profile email";
 
         return array_merge($fields, $this->parameters);
     }
@@ -46,6 +51,8 @@ class HuaweiProvider extends AbstractProvider implements ProviderInterface
 
     public function getAccessToken($code)
     {
+
+
         $response = $this->getHttpClient()
             ->post(
                 $this->getTokenUrl(),
@@ -73,14 +80,17 @@ class HuaweiProvider extends AbstractProvider implements ProviderInterface
     {
         $fields = parent::getTokenFields($code);
         $fields["grant_type"] = "authorization_code";
+        $fields["scope"] = "profile email";
+
+
 
         return $fields;
     }
 
     protected function getUserByToken($token)
     {
-        $claims = explode('.', $token)[1];
 
+        $claims = explode('.', $token)[1];
         return json_decode(base64_decode($claims), true);
     }
 
@@ -91,6 +101,7 @@ class HuaweiProvider extends AbstractProvider implements ProviderInterface
         $user = $this->mapUserToObject($this->getUserByToken(
             Arr::get($response, 'id_token')
         ));
+
 
         return $user
             ->setToken(Arr::get($response, 'id_token'))

@@ -2,8 +2,9 @@
 
 namespace ImpressoLabs\LaravelSignInWithHuawei\Tests\Browser;
 
-use ImpressoLabs\LaravelSignInWithHuawei\Tests\BrowserTestCase;
+
 use Laravel\Dusk\Browser;
+use ImpressoLabs\LaravelSignInWithHuawei\Tests\BrowserTestCase;
 
 class SignInWithHuaweiTest extends BrowserTestCase
 {

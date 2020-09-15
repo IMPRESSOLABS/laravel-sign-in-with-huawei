@@ -34,7 +34,7 @@ class ServiceProvider extends LaravelServiceProvider
     {
         $socialite = $this->app->make(Factory::class);
         $socialite->extend(
-            'sign-in-with-apple',
+            'huawei',
             function ($app) use ($socialite) {
                 $config = $app['config']['services.huawei'];
 

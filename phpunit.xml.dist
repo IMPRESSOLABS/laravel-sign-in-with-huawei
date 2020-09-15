@@ -36,9 +36,9 @@
         <env name="DB_CONNECTION" value="sqlite"/>
         <env name="DB_DATABASE" value=":memory:"/>
         <env name="REDIS_HOST" value="192.168.10.10"/>
-        <env name="SIGN_IN_WITH_APPLE_LOGIN" value="/siwa-login"/>
-        <env name="SIGN_IN_WITH_APPLE_REDIRECT" value="http://testing.dev/siwa-callback"/>
-        <env name="SIGN_IN_WITH_APPLE_CLIENT_ID" value="add-your-own"/>
-        <env name="SIGN_IN_WITH_APPLE_CLIENT_SECRET" value="add-your-own"/>
+        <env name="HUAWEI_LOGIN" value="/siwa-login"/>
+        <env name="HUAWEI_REDIRECT" value="http://testing.dev/siwa-callback"/>
+        <env name="HUAWEU_CLIENT_ID" value="apiKey2"/>
+        <env name="HUAWEI_CLIENT_SECRET" value="eyJraWQiOiIiLCJhbGciOiJFUzI1NiJ9.eyJpc3MiOiI5UEhUOTI1TVBWIiwiaWF0IjoxNTk5NzE2Mjg4LCJleHAiOjE2MTUyNjgyODgsImF1ZCI6Imh0dHBzOi8vYXBwbGVpZC5hcHBsZS5jb20iLCJzdWIiOiJhcHAuaW1wcmVzc28uZGV2In0.yawgQqS9ZkZAPZC5zCLJxMOdKI-ccfE27JOdt6V3br0qV3JXv6NPqaIEJf8HrCm82tiR8xSBcblJQH6n2clEyw"/>
     </php>
 </phpunit>
