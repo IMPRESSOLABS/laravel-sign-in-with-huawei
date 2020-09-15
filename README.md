@@ -3,7 +3,7 @@
 
 
 ## Supporting This Package
-*Code base fork from [https://github.com/GeneaLabs/laravel-sign-in-with-apple]*
+*Code base fork from https://github.com/GeneaLabs/laravel-sign-in-with-apple*
 
 This is an MIT-licensed open source project with its ongoing development made possible by the support of the community. If you'd like to support this, and our other packages, please consider sponsoring us via the button above.
 
@@ -72,9 +72,10 @@ Note that when processing the returned `$user` object, it is critical to know th
 ----------
 
 #### Credits
-1. https://developer.huawei.com/consumer/en/doc/development/HMS-References/account-obtain-token
-2. https://forums.developer.huawei.com/forumPortal/en/topicview?tid=0201272938220820099&fid=0101187876626530001
-3. https://developer.huawei.com/consumer/en/doc/development/HMS-Plugin-References-V1/scope-0000001050728398-V1
+1. https://github.com/GeneaLabs/laravel-sign-in-with-apple
+2. https://developer.huawei.com/consumer/en/doc/development/HMS-References/account-obtain-token
+3. https://forums.developer.huawei.com/forumPortal/en/topicview?tid=0201272938220820099&fid=0101187876626530001
+4. https://developer.huawei.com/consumer/en/doc/development/HMS-Plugin-References-V1/scope-0000001050728398-V1
 
 ----------
 
