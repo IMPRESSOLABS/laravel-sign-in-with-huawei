@@ -39,7 +39,7 @@ class HuaweiProvider extends AbstractProvider implements ProviderInterface
         }
 
         $fields["grant_type"] = "authorization_code";
-        $fields["scope"] = "profile email";
+        $fields["scope"] = "openid profile email";
 
         return array_merge($fields, $this->parameters);
     }
@@ -80,7 +80,7 @@ class HuaweiProvider extends AbstractProvider implements ProviderInterface
     {
         $fields = parent::getTokenFields($code);
         $fields["grant_type"] = "authorization_code";
-        $fields["scope"] = "profile email";
+        $fields["scope"] = "openid profile email";
 
 
 
