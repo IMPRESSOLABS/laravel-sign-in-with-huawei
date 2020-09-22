@@ -115,12 +115,12 @@ class HuaweiProvider extends AbstractProvider implements ProviderInterface
             $userRequest = json_decode(request("user"), true);
 
             if (array_key_exists("name", $userRequest)) {
-                $user["name"] = $userRequest["name"];
-                $fullName = trim(
-                    ($user["name"]['family_name'] ?? "")
-                    . " "
-                    . ($user["name"]['given_name'] ?? "")
-                );
+                $fullName = $userRequest["name"];
+                list($firstname , $lastname) = explode(' ', $fullName);
+            }
+
+            if (array_key_exists("family_name", $userRequest)) {
+                 $lastname = $userRequest["family_name"];
             }
         }
 
@@ -129,6 +129,8 @@ class HuaweiProvider extends AbstractProvider implements ProviderInterface
             ->map([
                 "id" => $user["sub"],
                 "name" => $fullName ?? null,
+                "firstname" => $firstname ?? null,
+                "lastname" => $lastname ?? null,
                 "email" => $user["email"] ?? null,
             ]);
     }
