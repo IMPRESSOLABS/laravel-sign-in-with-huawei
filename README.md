@@ -7,6 +7,7 @@
 
 This is an MIT-licensed open source project with its ongoing development made possible by the support of the community. If you'd like to support this, and our other packages, please consider sponsoring us via the button above.
 
+
 ## Table of Contents
 - [Requirements](#Requirements)
 - [Installation](#Installation)
@@ -67,8 +68,6 @@ class HuaweiSigninController extends Controller
 }
 ```
 
-Note that when processing the returned `$user` object, it is critical to know that the `sub` element is the unique identifier for the user, **NOT** the email address. For more details, visit https://developer.huawei.com/consumer/en/doc/development/HMS-References/account-obtain-token.
-
 ----------
 
 #### Credits
@@ -79,18 +78,5 @@ Note that when processing the returned `$user` object, it is critical to know th
 
 ----------
 
-## Commitment to Quality
 
-## Contributing
-Please observe and respect all aspects of the included [Code of Conduct](https://github.com/IMPRESSOLABS/laravel-sign-in-with-huawei/blob/master/CODE_OF_CONDUCT.md).
 
-### Reporting Issues
-When reporting issues, please fill out the included template as completely as
-possible. Incomplete issues may be ignored or closed if there is not enough
-information included to be actionable.
-
-### Submitting Pull Requests
-Please review the [Contribution Guidelines](https://github.com/IMPRESSOLABS/laravel-sign-in-with-huawei/blob/master/CONTRIBUTING.md). Only PRs that meet all criterium will be accepted.
-
-## If you ❤️ open-source software, give the repos you use a ⭐️.
-We have included the awesome `symfony/thanks` composer package as a dev dependency. Let your OS package maintainers know you appreciate them by starring the packages you use. Simply run `composer thanks` after installing this package. (And not to worry, since it's a dev-dependency it won't be installed in your live environment.)
